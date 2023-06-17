@@ -9,30 +9,34 @@
 </head>
 <body>
     
-    <div class="container">
-        <nav>
-            <h1 class="logo">Vive<span>Sano</span></h1>
-            <div class="nav-links">
-                <ul>
-                    <li class=""><a href="">Home</a></li>
-                    <li class=""><a href="">Sobre nosotros</a></li>
-                    <li class=""><a href="">Especialistas</a></li>
-                    <li class=""><a href="">Recetas</a></li>
-                    <li class=""><a href="">Planes de ejercicio</a></li>
-                    <li class=""><a href="">Iniciar sesion</a></li>
-                    <li class=""><a href="">Registrarse</a></li>
-                </ul>
-            </div>
-        </nav>
 
-        <div class="main">
-            <h2>ViveSano</h2>
-            <p>jkajshk</p>
+    <div class="banner">
+        <div class="contenido">
+            <h1>VIVESANO</h1>
+            <p>Aprende a bsansksn</p>
+            <div class="botones">
+            <button type="button" class="boton"><span></span>Sobre nosotros</button>
         </div>
         </div>
-
+        
     </div>
-
+    
+    <div class="about-section">
+        <div class="inner-container">
+            <h1>Sobre nosotros</h1>
+            <p class="text">
+                Somos una aplicacion que engloba ambitos como alimentacion y el ejercicio. 
+                Contamos información verídica, datos y profesionales en el area de la salud con los cuales podra contactarse. 
+                Ofrecemos un servicio totalmente gratuito.</p>
+    
+          <div class="skills">
+            <span>Especialistas</span>
+            <span>Recetas</span>
+            <span>Planes de ejercicio</span>
+          </div>  
+        </div>
+    </div>
+    
 
 </body>
 </html>
