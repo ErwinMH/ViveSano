@@ -49,8 +49,8 @@
               </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="button">Iniciar sesion</button>
-            <button class="btn btn-outline-success my-2 my-sm-0" type="button">Registrarse</button>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="button"><a  href="{{ route('login') }}">Iniciar sesion</a></button>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="button"><a  href="{{ route('register') }}">Registrarse</button>
           </form>
         </div>
       </nav>
@@ -66,6 +66,7 @@
         </div>
         
     </div>
+
     
     <div class="about-section">
         <div class="inner-container">
@@ -83,6 +84,46 @@
         </div>
     </div>
     
+      <!-- Start About-->
+      <section class="sobre-mi" id="sobre-mi">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h1>Sobre nosotros</h1>
+                    <p class="small text-uppercase">Que ofrecemos</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="sobre-content">
+                    <div class="row">
+                     <div class="img">
+                        <img src="" alt="sobre-mi">
+                    </div>
+                              <div class="text">
+                                      <h4>ViveSano</h4>
+                                      <h6>Quienes somos</h6>
+                                      <p>Somos una aplicacion que engloba ambitos como alimentacion y el ejercicio. 
+                                        Contamos información verídica, datos y profesionales en el area de la salud con los cuales podra contactarse. 
+                                        Ofrecemos un servicio totalmente gratuito.
+                                      </p>
+                                      <div class="info">
+                                          <div class="list">
+                                             <label><a href="">Planes de ejercicio</a></label>
+                                          </div>
+                                          <div class="list">
+                                             <label><a href="">Recetas / Dietas</a></label>
+                                         </div>
+                                        
+                                          
+                                    </div>
+                              </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
 </body>
 </html>

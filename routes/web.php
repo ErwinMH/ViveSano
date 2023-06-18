@@ -14,9 +14,16 @@ use App\Http\Controllers\registroController;
 |
 */
 
+Route::get('/welcome', function () {
+    return view('welcome');
+});
+
 Route::get('/', function () {
     return view('home');
 });
 
 
-Route::get('/registrarse', [registroController::class, 'registrar'])->name('registro.index');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

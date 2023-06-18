@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login ViveSano</title>
+    <link rel="stylesheet" href="{{ asset('css/login.css')}}">
 </head>
 <body>
     
    
 <form class="form_container">
     <div class="logo_container">
-      <img src="/assets/logo.jpg" alt="">
+      <img src="/" alt="">
     </div>
     <div class="title_container">
       <p class="title">Inicia sesion</p>

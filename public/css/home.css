@@ -1,3 +1,4 @@
+
 .form-inline{
     display: flex;
     gap: 10px;
@@ -5,7 +6,7 @@
 .banner{
     width: 100%;
     height: 90vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.411)), url(/img/1.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.411)), url();
     background-size: cover;
     background-position: center;
 }
@@ -86,4 +87,151 @@
     line-height: 30px;
     text-align: justify;
     margin-bottom: 40px;
+}
+
+/*Sobre Mi*/
+
+.sobre-mi{
+    padding: 100px 15px;
+    background-color: #ffffff;
+}
+
+.sobre-mi .section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+.sobre-mi .section-title h1{
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+    margin:0 0 10px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.sobre-mi .section-title h1:before {
+   content: '';
+   left: 0;
+   position: absolute;
+   height: 2px;
+   right: 30%;
+   background-color: #febd01;
+   bottom: 0px;
+}
+
+.text-uppercase{
+    text-transform: uppercase !important;
+}
+
+.sobre-mi .section-title p.small{
+    display: block;
+    font-size: 14px;
+    color: #838383;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+
+.sobre-mi .sobre-content .img{
+    flex:0 0 33.33%;
+    max-width: 33.33%;
+}
+
+.sobre-mi .sobre-content .img img{
+    width: 100%;
+    display: block;
+    background-image: url(/img/logo.jpg);
+}
+
+.sobre-mi .sobre-content .text{
+    flex:0 0 66.66%;
+    max-width: 66.66%;
+    padding-left: 30px;
+}
+
+.sobre-mi .sobre-content .text h4{
+    font-size: 25px;
+    font-weight: 600;
+    margin:0 0 10px;
+    color: #000000;
+}
+
+.sobre-mi .sobre-content .text h6{
+    font-size: 18px;
+    font-weight: 500;
+    margin:0 0 15px;
+    color: #000000;
+}
+.sobre-mi .sobre-content .text h6 span{
+    color: #febd01;
+}
+
+.sobre-mi .sobre-content .text p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #838383;
+    margin:0 0 20px;
+}
+
+.sobre-mi .sobre-content .text .info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+.sobre-mi .sobre-content .text .info .list{
+    flex: 0 0 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 10px;
+}
+
+.sobre-mi .sobre-content .text .info .list label{
+    padding-right: 10px;
+    color: #000000;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.sobre-mi .sobre-content .text .info .list p{
+    margin: 0;
+}
+
+.sobre-mi .sobre-content .text .social-links{
+   padding-top: 13px;
+}
+
+.sobre-mi .sobre-content .text .social-links a{
+    height: 30px;
+    width: 30px;
+    background-color: #000000;
+    border-radius: 3px;
+    display: inline-block;
+    border: 1px solid #000000;
+    line-height: 28px;
+    text-align: center;
+    margin: 0 1px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.sobre-mi .sobre-content .text .social-links a:hover{
+    background-color: transparent;
+}
+.sobre-mi .sobre-content .text .social-links a .fa{
+    color: #ffffff;
+    font-size: 12px;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.sobre-mi .sobre-content .text .social-links a:hover .fa{
+    color: #000000;
 }
