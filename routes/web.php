@@ -43,6 +43,16 @@ Route::get('/contactSally', function () {
     return view('contactSally');
 });
 
+Route::get('/admin', function () {
+    return view('admin.index');
+});
+
+Route::get('/usuarios', function () {
+    return view('crud.index');
+});
+
+
+
 
 
 
