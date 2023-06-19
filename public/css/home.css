@@ -19,9 +19,15 @@
     text-align: center;
 }
 .contenido h1{
+   color: white;
     font-size: 70px;
-    margin-top: 80px;
     font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 7%;
+}
+.contenido h1 span{
+    color: #febd01;
 }
 .contenido p{
     margin: 20px auto;
@@ -29,23 +35,23 @@
     line-height: 25px;
 }
 .boton{
-    width: 150px;
+    width: 170px;
     padding: 10px 0;
     text-align: center;
     margin: 20px 10px;
-    border-radius: 25px;
+    border-radius: 5px;
     color: #fff;
     cursor: pointer;
-    border: 2px solid green;
+    border: 2px solid #febd01;
     background: transparent;
     position: relative;
     overflow: hidden;
 }
 .boton span{
-    background-color: green;
+    background-color: #febd01;
     height: 100%;
     width: 0;
-    border-radius: 25px;
+    border-radius: 5px;
     position:absolute;
     left: 0;
     bottom: 0;
@@ -281,7 +287,7 @@
 .services{
     padding: 100px 15px;
     background-color: #ffffff;
-    background-image: url(/img/4.png);
+    background-image: url(/img/9.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -383,3 +389,136 @@
     height: 100%;
     object-fit: cover;
 }
+
+
+ /* plato */
+
+
+ .plato{
+    padding: 100px 15px;
+    background-color: #ffffff;
+ 
+}
+
+.plato .section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+.plato .section-title h1{
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+    margin:0 0 10px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+
+.plato .section-title h1:before {
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 2px;
+    right: 30%;
+    background-color: #febd01;
+    bottom: 0px;
+ }
+ .text-uppercase{
+     text-transform: uppercase !important;
+ }
+
+
+ /* info */
+
+ .info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+ .info .alimentos{
+    flex: 0 0 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 10px;
+ }
+.info .alimentos label{
+    padding-right: 10px;
+    color: #000000;
+    font-weight: 600;
+    font-size: 15px;
+}
+.contenedor-alimentos{
+    display: flex;
+    gap: 20px;
+}
+.exp{
+    width: 50%;
+    height: 385px;
+    
+}
+
+
+ /* recetas */
+
+
+ .recetas{
+    padding: 100px 15px;
+    background-color: #ffffff;
+ 
+}
+
+.recetas .section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+.recetas .section-title h1{
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+    margin:0 0 10px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+
+.recetas .section-title h1:before {
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 2px;
+    right: 30%;
+    background-color: #febd01;
+    bottom: 0px;
+ }
+ .text-uppercase{
+     text-transform: uppercase !important;
+ }
+
+ .card-receta{
+    display: flex;
+    gap: 30px;
+    width: 300px;
+    height: 310px;
+ }
+
+.receta img{
+    width: 100%;
+    height: auto;
+}
+.receta h2{
+    margin-top: 10px;
+}
+.receta{
+text-align: center;
+}
+
+/* SEND EMAIL */

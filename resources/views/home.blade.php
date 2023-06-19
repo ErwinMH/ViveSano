@@ -13,7 +13,7 @@
   
     <div class="banner">
         <div class="contenido">
-            <h1>VIVESANO</h1>
+            <h1>VIVE<span>SANO</span></h1>
             <h4>Aprende a bsansksn</h4>
             <div class="botones">
             <button type="button" class="boton"><span></span>Sobre nosotros</button>
@@ -119,7 +119,7 @@
           </div>
           <div class="texto">
             <h2>Sally Qsy</h2>
-            <a href="{{ url('contSally')}}" class="btn btn-primary">Contactar</a>
+            <a href="{{ url('contactSally')}}" class="btn btn-primary">Contactar</a>
 
           </div>
         </div>
@@ -167,27 +167,27 @@
       </div>
         <div class="card-deck">
           <div class="card">
-            <img class="card-img-top" src="/img/2.png" alt="Card image cap">
+            <img class="card-img-top" src="/img/" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">Cricri</h5>
+              <h5 class="card-title">Crismely Valerio</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <p class="card-text"><small class="text-muted">Desarrolladora</small></p>
             </div>
           </div>
           <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
+            <img class="card-img-top" src="/im/brenda.jpeg" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">Profaj</h5>
+              <h5 class="card-title">Brenda Azcona</h5>
               <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <p class="card-text"><small class="text-muted">Desarrolladora</small></p>
             </div>
           </div>
           <div class="card">
             <img class="card-img-top" src="..." alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">Erwin</h5>
+              <h5 class="card-title">Erwin Martinez</h5>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <p class="card-text"><small class="text-muted">Desarrollador</small></p>
             </div>
           </div>
         </div>

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\registroController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,8 +39,17 @@ Route::get('/dietas', function () {
     return view('dietas');
 });
 
+Route::get('/contactSally', function () {
+    return view('contactSally');
+});
 
+
+
+
+
+;
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
