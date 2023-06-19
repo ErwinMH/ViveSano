@@ -14,23 +14,33 @@ class ChatController extends Controller
     }
 
     public function sendMessage(Request $request)
-    {
-        $message = $request->input('message');
+{
+    $message = $request->input('message');
 
-        $response = Http::withHeaders([
-            'Authorization' => 'Bearer ' . config('services.openai.api_key'),
-            'Content-Type' => 'application/json',
-        ])->post(config('services.openai.base_url') . 'chat/completions', [
-    'messages' => [
-    ['role' => 'system', 'content' => 'Usuario'],
-    ['role' => 'user', 'content' => $message],
-    ],
-    ]);
+    $response = Http::withHeaders([
+        "X-RapidAPI-Host" => "openai80.p.rapidapi.com",
+        "X-RapidAPI-Key" => "32a1b8ba79msh4e8b0c54aa86b12p1a8305jsn18fb066918cc",
+        "Content-Type" => "application/json",
+    ])
+        ->post("https://openai80.p.rapidapi.com/chat/completions", [
+            "model" => "gpt-3.5-turbo",
+            "messages" => [
+                [
+                    "role" => "user",
+                    "content" => $message
+                ]
+            ]
+        ]);
+
     $response = json_decode($response->body(), true);
-    
-    $answer = $response['choices'][0]['message']['content'];
-    
-    // Lógica para mostrar la respuesta al usuario en la vista
-    return view('chat.index', ['answer' => $answer]);
+
+    if (isset($response['choices']) && !empty($response['choices'])) {
+        $answer = $response['choices'][0]['message']['content'];
+    } else {
+        $answer = 'No response from the API.';
     }
+
+    // Logic to display the answer to the user in the view
+    return view('chat.index', ['answer' => $answer]);
+}
 }
