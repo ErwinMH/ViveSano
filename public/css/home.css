@@ -5,8 +5,8 @@
 }
 .banner{
     width: 100%;
-    height: 90vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.411)), url();
+    height: 95vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.411)), url(/img/1.png);
     background-size: cover;
     background-position: center;
 }
@@ -235,3 +235,86 @@
 .sobre-mi .sobre-content .text .social-links a:hover .fa{
     color: #000000;
 }
+
+/* Develop */
+
+
+.develop{
+    padding: 100px 15px;
+    background-color: #ffffff;
+}
+
+.develop .section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+.develop .section-title h1{
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+    margin:0 0 10px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+
+.develop .section-title h1:before {
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 2px;
+    right: 30%;
+    background-color: #febd01;
+    bottom: 0px;
+ }
+ 
+ .text-uppercase{
+     text-transform: uppercase !important;
+ }
+
+ /* Services */
+
+
+.services{
+    padding: 100px 15px;
+    background-color: #ffffff;
+    background-image: url(/img/2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.services .section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+.services .section-title h1{
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+    margin:0 0 10px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+
+.services .section-title h1:before {
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 2px;
+    right: 30%;
+    background-color: #febd01;
+    bottom: 0px;
+ }
+ 
+ .text-uppercase{
+     text-transform: uppercase !important;
+ }
+ 
+

@@ -22,6 +22,22 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/layouts', function () {
+    return view('layouts.app');
+});
+
+Route::get('/planes', function () {
+    return view('planes');
+});
+
+Route::get('/login2', function () {
+    return view('login2');
+});
+
+Route::get('/dietas', function () {
+    return view('dietas');
+});
+
 
 
 Auth::routes();
