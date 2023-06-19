@@ -6,7 +6,7 @@
 .banner{
     width: 100%;
     height: 95vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.411)), url(/img/1.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.411)), url(/img/4.png);
     background-size: cover;
     background-position: center;
 }
@@ -281,9 +281,10 @@
 .services{
     padding: 100px 15px;
     background-color: #ffffff;
-    background-image: url(/img/2.png);
+    background-image: url(/img/4.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .services .section-title{
@@ -316,5 +317,69 @@
  .text-uppercase{
      text-transform: uppercase !important;
  }
+
  
 
+ 
+ /* profesionales */
+
+
+.profesionales{
+    padding: 100px 15px;
+    background-color: #ffffff;
+ 
+}
+
+.profesionales .section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+.profesionales .section-title h1{
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #000000;
+    margin:0 0 10px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+
+.profesionales .section-title h1:before {
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 2px;
+    right: 30%;
+    background-color: #febd01;
+    bottom: 0px;
+ }
+ .text-uppercase{
+     text-transform: uppercase !important;
+ }
+.profesionales .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.profesionales .content .box{
+    width: 250px;
+    height: 300px;
+    margin: 15px;
+}
+.profesionales .content .box .imgP{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.profesionales .content .box .imgP img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

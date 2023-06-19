@@ -64,13 +64,105 @@
         </div>
     </section>
 
+      <!-- End About-->
+
+
+
+      
+      <!-- Start services-->
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+              <h1 class="serviciosh1">Servicios</h1>
+              <p class="small text-uppercase">Ofrecemos</p>
+          </div>
+      </div>
+
+          <div class="card-deck">
+          
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Dietas</h3>
+                <p class="card-text">This card has supporting text below as a natural lead-in  to additional content.</p>
+                <a href="{{ url('dietas')}}" class="btn btn-primary">Ver mas...</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h3 class="card-title">Planes de ejercicio</h3>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <a href="{{ url('planes')}}" class="btn btn-primary">Ver mas..</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- End services-->
+
+
+      <!-- Start profesionales-->
+
+      <section class="profesionales" id="profesionales">
+        <div class="section-title">
+          <h1>Profesionales</h1>
+          <p class="small text-uppercase">Conoce y contacta profesionales de la salud</p>
+      </div>
+
+      <div class="content">
+        <div class="box">
+          <div class="imgP">
+            <img src="img/nut.jpg" alt="">
+          </div>
+          <div class="texto">
+            <h2>Sally Qsy</h2>
+            <a href="{{ url('contSally')}}" class="btn btn-primary">Contactar</a>
+
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="imgP">
+            <img src="img/nut.jpg" alt="">
+          </div>
+          <div class="texto">
+            <h2>Sally Qsy</h2>
+            <a href="{{ url('contNilda')}}" class="btn btn-primary">Contactar</a>
+
+          </div>
+        </div>
+
+
+        <div class="box">
+          <div class="imgP">
+            <img src="img/nut.jpg" alt="">
+          </div>
+          <div class="texto">
+            <h2>Sally Qsy</h2>
+            <a href="{{ url('contSally')}}" class="btn btn-primary">Contactar</a>
+
+          </div>
+        </div>
+
+        
+      </div>
+      </section>
+
+      <!-- End profesionales-->
+
+
+
+      <!-- Start creadores-->
 
     <section class="develop" id="develop">
       <div class="container">
         <div class="row">
           <div class="section-title">
-              <h1>ytct</h1>
-              <p class="small text-uppercase">Lo tre bacano</p>
+              <h1>Creadores</h1>
+              <p class="small text-uppercase">Desarrolladores de la aplicacion</p>
           </div>
       </div>
         <div class="card-deck">
@@ -102,38 +194,9 @@
       </div>
     </section>
 
+      <!-- End creadores-->
 
-    <section class="services" id="services">
-      <div class="container">
-        <div class="row">
-          <div class="section-title">
-              <h1>ytct</h1>
-              <p class="small text-uppercase">Lo tre bacano</p>
-          </div>
-      </div>
 
-          <div class="card-deck">
-          
-            <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap">
-              <div class="card-body">
-                <h3 class="card-title">Dietas</h3>
-                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <a href="{{ url('dietas')}}" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-            <div class="card">
-              <img class="card-img-top" src="..." alt="Card image cap">
-              <div class="card-body">
-                <h3 class="card-title">Planes de ejercicio</h3>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                <a href="{{ url('planes')}}" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
 
 
