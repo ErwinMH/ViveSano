@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ChatController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\registroController;
 
@@ -20,3 +21,8 @@ Route::get('/', function () {
 
 
 Route::get('/registrarse', [registroController::class, 'registrar'])->name('registro.index');
+
+Route::get('/chat', 'ChatController@index')->name('chat.index');
+Route::post('/chat', 'ChatController@sendMessage')->name('chat.sendMessage');
+
+Route::get('/chat', [\App\Http\Controllers\ChatController::class, 'index'])->name('chat.index')->middleware();;
