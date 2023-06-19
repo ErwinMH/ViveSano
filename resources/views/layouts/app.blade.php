@@ -49,17 +49,7 @@
                               <a class="nav-link" href="{{ url('home')}}">Home <span class="sr-only"></span></a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="">Planes de ejercicio</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown
-                              </a>
-                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="">kaj</a>
-                                <a class="dropdown-item" href="">argo</a>
-                               
-                              </div>
+                              <a class="nav-link" href="{{ url('planes')}}">Planes de ejercicio</a>
                             </li>
                             <li class="nav-item">
                               <a class="nav-link" href="{{ url('dietas')}}">Recetas</a>

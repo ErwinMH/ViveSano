@@ -37,7 +37,7 @@
                 <div class="sobre-content">
                     <div class="row">
                      <div class="img">
-                        <img src="" alt="sobre-mi">
+                        <img src="/img/logo.jpg" alt="sobre-mi">
                     </div>
                               <div class="text">
                                       <h4>¿Quiénes Somos?</h4>
@@ -85,14 +85,14 @@
             <div class="card">
               <div class="card-body">
                 <h3 class="card-title">Dietas</h3>
-                <p class="card-text">This card has supporting text below as a natural lead-in  to additional content.</p>
+                <p class="card-text">Según tus necesidades .</p>
                 <a href="{{ url('dietas')}}" class="btn btn-primary">Ver mas...</a>
               </div>
             </div>
             <div class="card">
               <div class="card-body">
                 <h3 class="card-title">Planes de ejercicio</h3>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                <p class="card-text">Según tus necesidades, genera tu rutina de ejercicio.</p>
                 <a href="{{ url('planes')}}" class="btn btn-primary">Ver mas..</a>
               </div>
             </div>
@@ -167,26 +167,23 @@
       </div>
         <div class="card-deck">
           <div class="card">
-            <img class="card-img-top" src="/img/" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Crismely Valerio</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Encargada de páginas web, cooperó con desarrollo de programación.</p>
               <p class="card-text"><small class="text-muted">Desarrolladora</small></p>
             </div>
           </div>
           <div class="card">
-            <img class="card-img-top" src="/im/brenda.jpeg" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Brenda Azcona</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text">Encargada de base de datos, cooperó con desarrollo de programación.</p>
               <p class="card-text"><small class="text-muted">Desarrolladora</small></p>
             </div>
           </div>
           <div class="card">
-            <img class="card-img-top" src="..." alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">Erwin Martinez</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text">Encargado de desarrollo de programación.</p>
               <p class="card-text"><small class="text-muted">Desarrollador</small></p>
             </div>
           </div>
