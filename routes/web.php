@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\registroController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\MailController;
 use Illuminate\Support\Facades\Auth;
 
 /*
@@ -55,6 +56,9 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/rutina', [RutinaController::class, 'index'])->name('rutina.index')->middleware();;
     Route::post('/rutina', [RutinaController::class, 'sendMessage'])->name('rutina.sendMessage');
     
+
+    Route::get('/email', [MailController::class, 'email'])->name('email.index')->middleware();;
+
     Route::get('/layouts', function () {
         return view('layouts.app');
     });

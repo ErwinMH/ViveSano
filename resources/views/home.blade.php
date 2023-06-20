@@ -104,54 +104,7 @@
       <!-- End services-->
 
 
-      <!-- Start profesionales-->
-
-      <section class="profesionales" id="profesionales">
-        <div class="section-title">
-          <h1>Profesionales</h1>
-          <p class="small text-uppercase">Conoce y contacta profesionales de la salud</p>
-      </div>
-
-      <div class="content">
-        <div class="box">
-          <div class="imgP">
-            <img src="img/nut.jpg" alt="">
-          </div>
-          <div class="texto">
-            <h2>Sally Qsy</h2>
-            <a href="{{ url('contactSally')}}" class="btn btn-primary">Contactar</a>
-
-          </div>
-        </div>
-
-        <div class="box">
-          <div class="imgP">
-            <img src="img/nut.jpg" alt="">
-          </div>
-          <div class="texto">
-            <h2>Sally Qsy</h2>
-            <a href="{{ url('contNilda')}}" class="btn btn-primary">Contactar</a>
-
-          </div>
-        </div>
-
-
-        <div class="box">
-          <div class="imgP">
-            <img src="img/nut.jpg" alt="">
-          </div>
-          <div class="texto">
-            <h2>Sally Qsy</h2>
-            <a href="{{ url('contSally')}}" class="btn btn-primary">Contactar</a>
-
-          </div>
-        </div>
-
-        
-      </div>
-      </section>
-
-      <!-- End profesionales-->
+      
 
 
 

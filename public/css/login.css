@@ -19,15 +19,14 @@
     box-sizing: border-box;
     width: 150px;
     height: 130px;
-    background-image: url(/img/logo.jpg);
     border: 1px solid #F7F7F8;
     filter: drop-shadow(0px 0.5px 0.5px #efefef00) drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.007));
     border-radius: 11px;
   }
 .logo_container img{
-   width: 100px;
+   width: 120px;
    height: auto;
-   margin-left: 10px;
+   margin-left: 15px;
    
 }
   
