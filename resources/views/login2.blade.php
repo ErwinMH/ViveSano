@@ -12,7 +12,7 @@
    
 <form class="form_container" method="POST" action="{{ route('login') }}">
     <div class="logo_container">
-      <img src="/" alt="">
+      <img src="/img/logo.jpg" alt="">
     </div>
     <div class="title_container">
       <p class="title">Inicia sesion</p>
