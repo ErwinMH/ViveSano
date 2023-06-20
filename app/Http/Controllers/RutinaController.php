@@ -41,6 +41,6 @@ class RutinaController extends Controller
     }
 
     // Logic to display the answer to the user in the view
-    return view('chat.rutina', ['answer' => $answer]);
+    return view('planes', ['answer' => $answer]);
 }
 }
