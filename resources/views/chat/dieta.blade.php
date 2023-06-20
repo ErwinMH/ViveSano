@@ -1,6 +1,6 @@
-<h1>ChatGPT en Laravel</h1>
+<h1>Genera tu dieta</h1>
 
-<form action="{{ route('chat.sendMessage') }}" method="post">
+<form action="{{ route('dieta.sendMessage') }}" method="post">
     @csrf
     <label for="message">Mensaje:</label>
     <input type="text" name="message" id="message" />
