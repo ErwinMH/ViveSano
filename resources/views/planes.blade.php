@@ -27,7 +27,7 @@
 
 @if(isset($answer))
     <div>
-        <textarea name="respuesta" id="" cols="40" rows="20">{{ $answer }}</textarea>
+        <textarea name="respuesta" id="" cols="40" rows="20" disabled>{{ $answer }}</textarea>
     </div>
 @endif
 </div>
