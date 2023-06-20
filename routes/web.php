@@ -18,6 +18,8 @@ use App\Http\Controllers\ContactController;
 */
 
 
+Auth::routes();
+
 Route::get('/welcome', function () {
     return view('welcome');
 });
@@ -27,6 +29,8 @@ Route::get('/', function () {
 });
 
 Route::get('/registrarse', [registroController::class, 'registrar'])->name('registro.index');
+
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
 
 
@@ -72,10 +76,6 @@ Route::get('/usuarios', function () {
     return view('crud.index');
 });
 
-;
-
-Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/login', [LoginController::class, 'attemptLogin'])->name('login.index');

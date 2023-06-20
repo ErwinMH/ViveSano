@@ -46,15 +46,5 @@ class LoginRequest extends FormRequest
         return !$factory->make(['email' => $value], ['email' => 'email'])->fails();
     }
 
-    /**
-     * Handle a failed validation attempt.
-     *
-     * @param  \Illuminate\Contracts\Validation\Validator  $validator
-     * @return void
-     */
-    public function failedValidation($validator)
-    {
-        $controller = new LoginController;
-        $controller->error($validator);
-    }
+
 }
