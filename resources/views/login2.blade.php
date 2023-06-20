@@ -10,7 +10,7 @@
 <body>
     
    
-<form class="form_container">
+<form class="form_container" method="POST" action="{{ route('login') }}">
     <div class="logo_container">
       <img src="/" alt="">
     </div>

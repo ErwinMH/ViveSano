@@ -3,6 +3,7 @@ use App\Http\Controllers\DietaController;
 use App\Http\Controllers\RutinaController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\registroController;
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\ContactController;
 
 /*
@@ -16,6 +17,7 @@ use App\Http\Controllers\ContactController;
 |
 */
 
+
 Route::get('/welcome', function () {
     return view('welcome');
 });
@@ -25,6 +27,8 @@ Route::get('/', function () {
 });
 
 Route::get('/registrarse', [registroController::class, 'registrar'])->name('registro.index');
+
+
 
 Route::get('/dieta', 'DietaController@index')->name('dieta.index');
 Route::post('/dieta', 'DietaController@sendMessage')->name('dieta.sendMessage');
@@ -50,6 +54,8 @@ Route::get('/login2', function () {
     return view('login2');
 });
 
+Route::post('/login2', [LoginController::class, 'login'])->name('login');
+
 Route::get('/dietas', function () {
     return view('dietas');
 });
@@ -72,3 +78,4 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('/login', [LoginController::class, 'attemptLogin'])->name('login.index');
