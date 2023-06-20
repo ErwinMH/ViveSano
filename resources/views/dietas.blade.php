@@ -74,8 +74,7 @@
 
 @if(isset($answer))
   <div>
-      <strong>Dieta generada:</strong> 
-      <textarea name="respuesta" id="" cols="30" rows="10">{{ $answer }}</textarea>
+      <textarea name="respuesta" id="" cols="40" rows="20">{{ $answer }}</textarea>
   </div>
 @endif
 

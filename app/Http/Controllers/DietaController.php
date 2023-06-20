@@ -41,6 +41,6 @@ class DietaController extends Controller
     }
 
     // Logic to display the answer to the user in the view
-    return view('chat.dieta', ['answer' => $answer]);
+    return view('dietas', ['answer' => $answer]);
 }
 }
