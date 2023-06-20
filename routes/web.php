@@ -3,7 +3,9 @@ use App\Http\Controllers\DietaController;
 use App\Http\Controllers\RutinaController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\registroController;
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\ContactController;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +18,9 @@ use App\Http\Controllers\ContactController;
 |
 */
 
+
+Auth::routes();
+
 Route::get('/welcome', function () {
     return view('welcome');
 });
@@ -25,6 +30,10 @@ Route::get('/', function () {
 });
 
 Route::get('/registrarse', [registroController::class, 'registrar'])->name('registro.index');
+
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+
+
 
 Route::get('/dieta', 'DietaController@index')->name('dieta.index');
 Route::post('/dieta', 'DietaController@sendMessage')->name('dieta.sendMessage');
@@ -50,6 +59,8 @@ Route::get('/login2', function () {
     return view('login2');
 });
 
+Route::post('/login2', [LoginController::class, 'login'])->name('login');
+
 Route::get('/dietas', function () {
     return view('dietas');
 });
@@ -66,9 +77,6 @@ Route::get('/usuarios', function () {
     return view('crud.index');
 });
 
-;
-
-Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
