@@ -38,7 +38,7 @@
    
     <div class="separator">
       <hr class="line">
-      <span>Aún no tienes una cuenta?<a href="" [routerLink]="['/registro']"> Registrate</a></span>
+      <span>Aún no tienes una cuenta?<a href="{{ url('register')}}"> Registrate</a></span>
       <hr class="line">
     </div> 
 
