@@ -521,4 +521,15 @@
 text-align: center;
 }
 
+#message.form-control{
+    width: 33%;
+    
+}
+.form-dieta{
+    display: flex;
+    gap: 10px;
+    top: 0;
+    margin-bottom: 2%;
+}
+
 /* SEND EMAIL */
