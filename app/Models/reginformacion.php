@@ -26,7 +26,7 @@ class Reginformacion extends Model
 {
     
     static $rules = [
-		'UserId' => 'required',
+		'id' => 'required',
 		'nombre_completo' => 'required',
 		'email' => 'required',
 		'fecha_nacimiento' => 'required',

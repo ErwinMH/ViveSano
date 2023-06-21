@@ -3,8 +3,8 @@
         
         <div class="form-group">
             {{ Form::label('User Id') }}
-            {{ Form::text('UserId', $reginformacion->UserId, ['class' => 'form-control' . ($errors->has('UserId') ? ' is-invalid' : ''), 'placeholder' => 'User Id']) }}
-            {!! $errors->first('UserId', '<div class="invalid-feedback">:message</div>') !!}
+            {{ Form::text('id', $reginformacion->UserId, ['class' => 'form-control' . ($errors->has('id') ? ' is-invalid' : ''), 'placeholder' => 'User Id']) }}
+            {!! $errors->first('id', '<div class="invalid-feedback">:message</div>') !!}
         </div>
         <div class="form-group">
             {{ Form::label('nombre_completo') }}

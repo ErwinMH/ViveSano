@@ -1,4 +1,6 @@
-
+*{
+    scroll-behavior: smooth;
+}
 .form-inline{
     display: flex;
     gap: 10px;
@@ -46,6 +48,10 @@
     background: transparent;
     position: relative;
     overflow: hidden;
+}
+.boton a{
+    text-decoration: none;
+    color: #fff;
 }
 .boton span{
     background-color: #febd01;
@@ -429,6 +435,13 @@
  .text-uppercase{
      text-transform: uppercase !important;
  }
+ .form-planes{
+    display: flex;
+    gap: 10px;
+    top: 0;
+    margin-bottom: 2%;
+    margin-left: 5%;
+}
 
 
  /* info */
@@ -532,4 +545,4 @@ text-align: center;
     margin-bottom: 2%;
 }
 
-/* SEND  */
+/* footer  */

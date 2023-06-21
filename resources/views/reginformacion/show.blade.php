@@ -22,7 +22,7 @@
                         
                         <div class="form-group">
                             <strong>Userid:</strong>
-                            {{ $reginformacion->UserId }}
+                            {{ $reginformacion->id }}
                         </div>
                         <div class="form-group">
                             <strong>Nombre Completo:</strong>
