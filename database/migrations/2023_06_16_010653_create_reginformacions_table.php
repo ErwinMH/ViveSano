@@ -12,7 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('reginformacions', function (Blueprint $table) {
-            $table->id();
+            $table->unsignedBigInteger('UserId');
+            $table->foreign('UserId')->references('id')->on('users');
             $table->string('nombre_completo');
             $table->string('email');
             $table->string('fecha_nacimiento');

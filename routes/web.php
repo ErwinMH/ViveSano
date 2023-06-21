@@ -1,4 +1,5 @@
 <?php
+use App\Http\Controllers\ReginformacionController;
 use App\Http\Controllers\DietaController;
 use App\Http\Controllers\RutinaController;
 use App\Http\Controllers\AdminController;
@@ -86,13 +87,13 @@ Route::middleware(['auth'])->group(function(){
     });
     
 //Registro información adicional
-Route::get('/datosuser', [\App\Http\Controllers\MedicalRecordController::class, 'index'])->name('medical-records.index');
-Route::get('/medical-records/create', [MedicalRecordController::class, 'create'])->name('medical-records.create');
-Route::post('/medical-records', [MedicalRecordController::class, 'store'])->name('medical-records.store');
-Route::delete('/medical-records/{medical-records}', [MedicalRecordController::class, 'destroy'])->name('medical-records.destroy');
-Route::get('/medical-records/{medical-records}', [MedicalRecordController::class, 'show'])->name('medical-records.show');
-Route::get('/medical-records/{medical-records}/edit', [MedicalRecordController::class, 'edit'])->name('medical-records.edit');
-Route::match(['PUT', 'PATCH'], '/medical-records/{medical-records}', [MedicalRecordController::class, 'update'])->name('medical_records.update');
+Route::get('/reginformacions', [\App\Http\Controllers\ReginformacionController::class, 'index'])->name('reginformacions.index');
+Route::get('/reginformacions/create', [ReginformacionController::class, 'create'])->name('reginformacions.create');
+Route::post('/reginformacions', [ReginformacionController::class, 'store'])->name('reginformacions.store');
+Route::delete('/reginformacions/{reginformacions}', [ReginformacionController::class, 'destroy'])->name('reginformacions.destroy');
+Route::get('/reginformacions/{reginformacions}', [ReginformacionController::class, 'show'])->name('reginformacions.show');
+Route::get('/reginformacions/{reginformacions}/edit', [ReginformacionController::class, 'edit'])->name('reginformacions.edit');
+Route::match(['PUT', 'PATCH'], '/reginformacions/{reginformacions}', [ReginformacionController::class, 'update'])->name('reginformacions.update');
 
 });
 

@@ -21,6 +21,10 @@
                     <div class="card-body">
                         
                         <div class="form-group">
+                            <strong>Userid:</strong>
+                            {{ $reginformacion->UserId }}
+                        </div>
+                        <div class="form-group">
                             <strong>Nombre Completo:</strong>
                             {{ $reginformacion->nombre_completo }}
                         </div>

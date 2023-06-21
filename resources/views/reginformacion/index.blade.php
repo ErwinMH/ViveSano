@@ -36,6 +36,7 @@
                                     <tr>
                                         <th>No</th>
                                         
+										<th>User Id</th>
 										<th>Nombre Completo</th>
 										<th>Email</th>
 										<th>Fecha Nacimiento</th>
@@ -52,6 +53,7 @@
                                         <tr>
                                             <td>{{ ++$i }}</td>
                                             
+											<td>{{ $reginformacion->UserId }}</td>
 											<td>{{ $reginformacion->nombre_completo }}</td>
 											<td>{{ $reginformacion->email }}</td>
 											<td>{{ $reginformacion->fecha_nacimiento }}</td>
@@ -61,7 +63,7 @@
 											<td>{{ $reginformacion->tipo_de_cuerpo }}</td>
 
                                             <td>
-                                                <form action="{{ route('reginformacions.destroy',$reginformacion->id) }}" method="POST">
+                                                <form action="{{ route('reginformacions.destroy', $reginformacion->id) }}" method="POST">
                                                     <a class="btn btn-sm btn-primary " href="{{ route('reginformacions.show',$reginformacion->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Show') }}</a>
                                                     <a class="btn btn-sm btn-success" href="{{ route('reginformacions.edit',$reginformacion->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Edit') }}</a>
                                                     @csrf
