@@ -312,8 +312,13 @@ return [
             'can'  => 'manage-blog',
         ],
         [
+<<<<<<< HEAD
             'text'        => 'Usuarios',
             'url'         => 'admin',
+=======
+            'text'        => 'Registro',
+            'url'         => 'admin/pages',
+>>>>>>> 82dbe1dc2c131f64e99583cc02e305976eff3b34
             'icon'        => 'far fa-fw fa-file',
             'label'       => 1,
             'label_color' => 'success',
