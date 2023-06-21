@@ -14,7 +14,7 @@
     <div class="banner">
         <div class="contenido">
             <h1>VIVE<span>SANO</span></h1>
-            <h4>Aprende a bsansksn</h4>
+            <h4>Aprende a bsanoinoinmoimnsksn</h4>
             <div class="botones">
             <button type="button" class="boton"><span></span>Sobre nosotros</button>
         </div>
