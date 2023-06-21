@@ -1,6 +1,7 @@
 <?php
 use App\Http\Controllers\DietaController;
 use App\Http\Controllers\RutinaController;
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\registroController;
 use App\Http\Controllers\Auth\LoginController;
@@ -42,7 +43,7 @@ Route::get('/login2', function () {
 Route::post('/login2', [LoginController::class, 'login'])->name('login');
     
 
-Route::middleware(['auth'])->group(function () {
+Route::middleware(['auth'])->group(function(){
 
     Route::get('/dieta', 'DietaController@index')->name('dieta.index');
     Route::post('/dieta', 'DietaController@sendMessage')->name('dieta.sendMessage');
@@ -76,15 +77,22 @@ Route::middleware(['auth'])->group(function () {
         return view('contactSally');
     });
     
-    Route::get('/admin', function () {
-        return view('admin.index');
-    });
+   
+    Route::get('/admin', [\App\Http\Controllers\AdminController::class, 'index'])->name('admin.index');
     
+
     Route::get('/usuarios', function () {
         return view('crud.index');
     });
     
-    
+//Registro información adicional
+Route::get('/datosuser', [\App\Http\Controllers\MedicalRecordController::class, 'index'])->name('medical-records.index');
+Route::get('/medical-records/create', [MedicalRecordController::class, 'create'])->name('medical-records.create');
+Route::post('/medical-records', [MedicalRecordController::class, 'store'])->name('medical-records.store');
+Route::delete('/medical-records/{medical-records}', [MedicalRecordController::class, 'destroy'])->name('medical-records.destroy');
+Route::get('/medical-records/{medical-records}', [MedicalRecordController::class, 'show'])->name('medical-records.show');
+Route::get('/medical-records/{medical-records}/edit', [MedicalRecordController::class, 'edit'])->name('medical-records.edit');
+Route::match(['PUT', 'PATCH'], '/medical-records/{medical-records}', [MedicalRecordController::class, 'update'])->name('medical_records.update');
 
 });
 
