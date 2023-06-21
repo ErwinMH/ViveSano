@@ -312,18 +312,23 @@ return [
             'can'  => 'manage-blog',
         ],
         [
-<<<<<<< HEAD
-            'text'        => 'Usuarios',
+            'text'        => 'Usuario',
             'url'         => 'admin',
-=======
-            'text'        => 'Registro',
-            'url'         => 'admin/pages',
->>>>>>> 82dbe1dc2c131f64e99583cc02e305976eff3b34
             'icon'        => 'far fa-fw fa-file',
             'label'       => 1,
             'label_color' => 'success',
         ],
-       
+        ['header' => 'account_settings'],
+        [
+            'text' => 'profile',
+            'url'  => 'admin/settings',
+            'icon' => 'fas fa-fw fa-user',
+        ],
+        [
+            'text' => 'change_password',
+            'url'  => 'admin/settings',
+            'icon' => 'fas fa-fw fa-lock',
+        ],
         [
             'text'    => 'multilevel',
             'icon'    => 'fas fa-fw fa-share',
@@ -362,7 +367,22 @@ return [
                 ],
             ],
         ],
-        
+        ['header' => 'labels'],
+        [
+            'text'       => 'important',
+            'icon_color' => 'red',
+            'url'        => '#',
+        ],
+        [
+            'text'       => 'warning',
+            'icon_color' => 'yellow',
+            'url'        => '#',
+        ],
+        [
+            'text'       => 'information',
+            'icon_color' => 'cyan',
+            'url'        => '#',
+        ],
     ],
 
     /*
