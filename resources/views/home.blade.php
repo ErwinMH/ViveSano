@@ -120,7 +120,7 @@
                   <div class="col-md-3">
                       <div class="bg-white p-3 text-center rounded box">
                           <h5 class="mt-3 name">Sally Perez</h5><span class="work d-block">Nutriologa</span>
-                          <div class="mt-4 about"><span>Conacta y pregunta lo que quieras saber</span></div>
+                          <div class="mt-4 about"><span>¡Contacta y pregunta lo que quieras saber!</span></div>
                           <div class="mt-4">
                               <a href="{{ url('contactSally')}}"><h6 class="v-profile">Contactar</h6></a>
                           </div>
@@ -129,7 +129,7 @@
                   <div class="col-md-3">
                       <div class="bg-white p-3 text-center rounded box">
                         <h5 class="mt-3 name">Emma Rivers</h5><span class="work d-block">Nutricionista</span>
-                        <div class="mt-4 about"><span>Conacta y pregunta lo que quieras saber</span></div>
+                        <div class="mt-4 about"><span>¡Contacta y pregunta lo que quieras saber!</span></div>
                           <div class="mt-4">
                             <a href="{{ url('contactSally')}}"><h6 class="v-profile">Contactar</h6></a>
                           </div>
@@ -138,7 +138,7 @@
                   <div class="col-md-3">
                       <div class="bg-white p-3 text-center rounded box">
                         <h5 class="mt-3 name">Daniel Roma</h5><span class="work d-block">Coach</span>
-                        <div class="mt-4 about"><span>Conacta y pregunta lo que quieras saber</span></div>
+                        <div class="mt-4 about"><span>¡Contacta y pregunta lo que quieras saber!</span></div>
                           <div class="mt-4">
                             <a href="{{ url('contactSally')}}"><h6 class="v-profile">Contactar</h6></a>
                           </div>

@@ -56,7 +56,7 @@
                 </div>
             </div>
             <div class="col-md-5 col-lg-4 m-15px-tb">
-                <p class="small text-uppercase">Coloca el numero de la persona en el formulario. <strong>Si quieres contactar a Sally COLOCA 1</strong></p>
+                <p class="small text-uppercase">Coloca el nombre de la persona en el formulario. <strong>Si quieres contactar a Sally COLOCA Sally</strong></p>
 
                 <div class="contact-name">
                     <h5>Profesionales</h5>
