@@ -5,6 +5,7 @@ use App\Http\Controllers\RutinaController;
 use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\registroController;
+use App\Http\Controllers\mensajeController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\MailController;
@@ -95,10 +96,8 @@ Route::get('/reginformacions/{reginformacions}', [ReginformacionController::clas
 Route::get('/reginformacions/{reginformacions}/edit', [ReginformacionController::class, 'edit'])->name('reginformacions.edit');
 Route::match(['PUT', 'PATCH'], '/reginformacions/{reginformacions}', [ReginformacionController::class, 'update'])->name('reginformacions.update');
 
-Route::post('/guardar-mensaje', 'mensajeController@guardarMensaje')->name('guardarMensaje');
-
+Route::post('/guardar-mensaje', [mensajeController::class, 'guardarMensaje'])->name('guardarMensaje');
 });
-
 
 
 

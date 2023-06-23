@@ -2,7 +2,7 @@
 
 @section('content')
 
-<form action="{{ route('guardarMensaje') }}" method="POST">
+
 
 <div class="contact" id="contact">
 <section class="section gray-bg" id="contactus">
@@ -25,9 +25,10 @@
         <div class="row flex-row-reverse">
             <div class="col-md-7 col-lg-8 m-15px-tb">
                 <div class="contact-form">
-                     <form action="/" method="post" class="contactform contact_form" id="contact_form">
+                     <form action="{{ route('guardarMensaje')}}" method="post" class="contactform contact_form" id="contact_form">
+                        @csrf
                         <div class="returnmessage valid-feedback p-15px-b" data-success="Your message has been received, We will contact you soon."></div>
-                        <div class="empty_notice invalid-feedback p-15px-b"><span>Please Fill Required Fields</span></div>
+                        <div class="empty_notice invalid-feedback p-15px-b"><span>Pleease Fill Required Fields</span></div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -36,7 +37,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input id="email" type="text" name="nombre" placeholder="Tu nombre" class="form-control">  
+                                    <input id="email" type="text" name="usuario" placeholder="Tu nombre" class="form-control">  
                                 </div>
                             </div>
                          
@@ -47,7 +48,7 @@
                             </div>
                             <div class="col-md-12">
                                 <div class="send">
-                                    <a id="send_message" class="px-btn theme" href=""><span>Enviar</span> <i class="arrow"></i></a>
+                                    <button type="submit" id="send_message" class="px-btn theme"><span>Enviar</span> <i class="arrow"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -73,6 +74,5 @@
     </div>
 </section>
 </div>
-</form>
 
 @endsection

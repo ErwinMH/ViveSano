@@ -4,13 +4,13 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Symfony\Contracts\Service\Attribute\Required;
 
 class mensajes extends Model
 {
     protected $fillable = [
-        'id',
-        'id_profesional',
-        'nombre_usuario',
+        'nombre_profesional',
+        'nombre',
         'mensaje',
     ];
 }
