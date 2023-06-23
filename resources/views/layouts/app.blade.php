@@ -53,6 +53,9 @@
                             <li class="nav-item">
                               <a class="nav-link" href="{{ url('dietas')}}">Recetas</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url('contactSally')}}">Contacta profesionales</a>
+                              </li>
                             
                           </ul>
                     </ul>

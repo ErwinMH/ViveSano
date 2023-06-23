@@ -2,108 +2,77 @@
 
 @section('content')
 
+<form action="{{ route('guardarMensaje') }}" method="POST">
 
-<!--Section: Contact v.2-->
-<form action="">
-    @csrf
-<section class="mb-4">
-
-    <!--Section heading-->
-
-    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
-
-    <!--Section description-->
-    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
-        a matter of hours to help you.</p>
-
-    <div class="row">
-
-        <!--Grid column-->
-        <div class="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <label for="name" class="">Your name</label>
-                            <input type="text" id="name" name="name"  class="form-control">
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <label for="email" class="">Your email</label>
-                            <input type="text" id="email" name="email" class="form-control">
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
+<div class="contact" id="contact">
+<section class="section gray-bg" id="contactus">
+    <style>
+        .py-4 {
+        padding-top: 0 !important;
+        padding-bottom: 1.5rem !important;
+      }
+    
+      </style>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="section-title">
+                    <h2>Contactanos</h2>
+                    <p class="small text-uppercase">Envia un mensaje y mantente en contactos con nuestros profesionales</p>
                 </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="md-form mb-0">
-                            <label for="subject" class="">Subject</label>
-                            <input type="text" id="subject" name="subject" class="form-control">
-                        </div>
-                    </div>
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-12">
-
-                        <div class="md-form">
-                            <label for="message">Your message</label>
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                        </div>
-
-                    </div>
-                </div>
-                <!--Grid row-->
-
-            </form>
-
-            <div class="text-center text-md-left">
-                <button type="submit" class="btn btn-primary">Enviar</button>
-
             </div>
-            <div class="status"></div>
         </div>
-        <!--Grid column-->
+        <div class="row flex-row-reverse">
+            <div class="col-md-7 col-lg-8 m-15px-tb">
+                <div class="contact-form">
+                     <form action="/" method="post" class="contactform contact_form" id="contact_form">
+                        <div class="returnmessage valid-feedback p-15px-b" data-success="Your message has been received, We will contact you soon."></div>
+                        <div class="empty_notice invalid-feedback p-15px-b"><span>Please Fill Required Fields</span></div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input id="name" type="text" name="nombre_profesional" placeholder="Profesional. Ejemplo: 1" class="form-control"> 
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input id="email" type="text" name="nombre" placeholder="Tu nombre" class="form-control">  
+                                </div>
+                            </div>
+                         
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <textarea id="message" name="mensaje" placeholder="Mensaje" class="form-control" rows="3"></textarea> 
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="send">
+                                    <a id="send_message" class="px-btn theme" href=""><span>Enviar</span> <i class="arrow"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-5 col-lg-4 m-15px-tb">
+                <p class="small text-uppercase">Coloca el numero de la persona en el formulario. <strong>Si quieres contactar a Sally COLOCA 1</strong></p>
 
-        <!--Grid column-->
-        <div class="col-md-3 text-center">
-            <ul class="list-unstyled mb-0">
-                <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                    <p>San Francisco, CA 94126, USA</p>
-                </li>
+                <div class="contact-name">
+                    <h5>Profesionales</h5>
 
-                <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                    <p>+ 01 234 567 89</p>
-                </li>
+                    <p>1: Sally Perez - Nutriologa</p>
+                    <p>2: Emma Rivers - Nutricionista</p>
+                    <p>3: Daniel Roma - Coach </p>
 
-                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                    <p>contact@mdbootstrap.com</p>
-                </li>
-            </ul>
+                </div>
+              
+                
+                
+            </div>
         </div>
-        <!--Grid column-->
-
     </div>
-
 </section>
+</div>
 </form>
-<!--Section: Contact v.2-->
 
 @endsection
