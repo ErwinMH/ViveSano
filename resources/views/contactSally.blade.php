@@ -31,22 +31,22 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input id="name" type="text" placeholder="Full Name" class="form-control"> 
+                                    <input id="name" type="text" placeholder="Tu nombre" class="form-control"> 
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input id="email" type="text" placeholder="Email Address" class="form-control">  
+                                    <input id="email" type="text" placeholder="Email" class="form-control">  
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-group">
-                                    <input id="subject" type="text" placeholder="Subject" class="form-control"> 
+                                    <input id="subject" type="text" placeholder="Asunto" class="form-control"> 
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <textarea id="message" placeholder="Message" class="form-control" rows="3"></textarea> 
+                                    <textarea id="message" placeholder="Mensaje" class="form-control" rows="3"></textarea> 
                                 </div>
                             </div>
                             <div class="col-md-12">
