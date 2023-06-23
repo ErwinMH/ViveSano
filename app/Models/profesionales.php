@@ -7,10 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class profesionales extends Model
 {
-    protected $fillable = [
-        'id',
-        'id_profesional',
-        'nombre_usuario',
-        'mensaje',
-    ];
+    g
 }
