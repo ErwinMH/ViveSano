@@ -104,7 +104,59 @@
       <!-- End services-->
 
 
+      <!-- Start profesionales-->
+
+      <section class="profesional" id="profesional">
+        <div class="container">
+          <div class="row">
+            <div class="section-title" name="servicios" id="servicios">
+                <h1>Profesionales</h1>
+                <p class="small text-uppercase">Conctactate con nuestros profesionales y consulta con ellos cualquier duda </p>
+            </div>
+
+            <div class="container text-center">
+          <div class="container mt-3">
+              <div class="row">
+                  <div class="col-md-3">
+                      <div class="bg-white p-3 text-center rounded box">
+                          <h5 class="mt-3 name">Sally Perez</h5><span class="work d-block">Nutriologa</span>
+                          <div class="mt-4 about"><span>Conacta y pregunta lo que quieras saber</span></div>
+                          <div class="mt-4">
+                              <a href="{{ url('contactSally')}}"><h6 class="v-profile">Contactar</h6></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="bg-white p-3 text-center rounded box">
+                        <h5 class="mt-3 name">Emma Rivers</h5><span class="work d-block">Nutricionista</span>
+                        <div class="mt-4 about"><span>Conacta y pregunta lo que quieras saber</span></div>
+                          <div class="mt-4">
+                            <a href="{{ url('contactSally')}}"><h6 class="v-profile">Contactar</h6></a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-3">
+                      <div class="bg-white p-3 text-center rounded box">
+                        <h5 class="mt-3 name">Daniel Roma</h5><span class="work d-block">Coach</span>
+                        <div class="mt-4 about"><span>Conacta y pregunta lo que quieras saber</span></div>
+                          <div class="mt-4">
+                            <a href="{{ url('contactSally')}}"><h6 class="v-profile">Contactar</h6></a>
+                          </div>
+                      </div>
+                  </div>
+                  
+              </div>
+          </div>            
+
+        </div>
+
+        </div>
+      </section>
       
+
+    
+      
+      <!-- End profesionales-->
 
 
 
