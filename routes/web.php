@@ -96,7 +96,18 @@ Route::get('/reginformacions/{reginformacions}', [ReginformacionController::clas
 Route::get('/reginformacions/{reginformacions}/edit', [ReginformacionController::class, 'edit'])->name('reginformacions.edit');
 Route::match(['PUT', 'PATCH'], '/reginformacions/{reginformacions}', [ReginformacionController::class, 'update'])->name('reginformacions.update');
 
-Route::post('/guardar-mensaje', [mensajeController::class, 'guardarMensaje'])->name('guardarMensaje');
+Route::post('/guardar-mensaje', [MensajeController::class, 'guardarMensaje'])->name('guardarMensaje');
+
+//Mensaje
+Route::get('/mensajes', [\App\Http\Controllers\MensajeController::class, 'index'])->name('mensajes.index');
+Route::post('/mensajes', [MensajeControllerr::class, 'store'])->name('mensajes.store');
+Route::get('/mensajes/{mensajes}', [MensajeController::class, 'show'])->name('mensajes.show');
+
+Route::get('/mensaje/store', function () {
+    return redirect('mensajes');
+});
+
+
 });
 
 

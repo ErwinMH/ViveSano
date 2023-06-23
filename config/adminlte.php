@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\mensajes;
+
 return [
 
     /*
@@ -320,8 +322,8 @@ return [
         ],
         ['header' => 'account_settings'],
         [
-            'text' => 'mensaje',
-            'url'  => 'admin/mensajeria',
+            'text' => 'Mensajes',
+            'url'  => '/mensaje/store',
             'icon' => 'fas fa-fw fa-user',
         ],
         [
