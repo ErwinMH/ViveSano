@@ -31,7 +31,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input id="name" type="text" placeholder="Profesional" class="form-control"> 
+                                    <input id="name" type="text" placeholder="Profesional. Ejemplo: 1" class="form-control"> 
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -55,9 +55,15 @@
                 </div>
             </div>
             <div class="col-md-5 col-lg-4 m-15px-tb">
+                <p class="small text-uppercase">Coloca el numero de la persona en el formulario. <strong>Si quieres contactar a Sally COLOCA 1</strong></p>
+
                 <div class="contact-name">
                     <h5>Profesionales</h5>
-                    <p>Elige a quien quieras enviar el mensaje</p>
+
+                    <p>1: Sally Perez - Nutriologa</p>
+                    <p>2: Emma Rivers - Nutricionista</p>
+                    <p>3: Daniel Roma - Coach </p>
+
                 </div>
               
                 
