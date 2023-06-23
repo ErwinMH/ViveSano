@@ -5,6 +5,14 @@
 
 
 <div class="plato" id="plato">
+  <style>
+    .py-4 {
+    padding-top: 0 !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  </style>
+
     <div class="container">
         <div class="row">
             <div class="section-title">
