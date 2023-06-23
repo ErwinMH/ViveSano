@@ -8,7 +8,7 @@ use App\Models\mensaje;
 
 class ProfesionalController extends Controller
 {
-    public function store(Request $request)
+    public function guardarMensaje(Request $request)
     {
         $mensaje = new mensaje;
         $mensaje->id_profesional = $request->input('nombre_profesional');

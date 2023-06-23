@@ -2,6 +2,7 @@
 
 @section('content')
 
+<form action="{{ route('guardarMensaje') }}" method="POST">
 
 <div class="contact" id="contact">
 <section class="section gray-bg" id="contactus">
@@ -12,7 +13,6 @@
       }
     
       </style>
-      
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
@@ -31,18 +31,18 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input id="name" type="text" placeholder="Profesional. Ejemplo: 1" class="form-control"> 
+                                    <input id="name" type="text" name="nombre_profesional" placeholder="Profesional. Ejemplo: 1" class="form-control"> 
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input id="email" type="text" placeholder="Tu nombre" class="form-control">  
+                                    <input id="email" type="text" name="nombre" placeholder="Tu nombre" class="form-control">  
                                 </div>
                             </div>
                          
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <textarea id="message" placeholder="Mensaje" class="form-control" rows="3"></textarea> 
+                                    <textarea id="message" name="mensaje" placeholder="Mensaje" class="form-control" rows="3"></textarea> 
                                 </div>
                             </div>
                             <div class="col-md-12">
@@ -73,5 +73,6 @@
     </div>
 </section>
 </div>
+</form>
 
 @endsection

@@ -95,6 +95,8 @@ Route::get('/reginformacions/{reginformacions}', [ReginformacionController::clas
 Route::get('/reginformacions/{reginformacions}/edit', [ReginformacionController::class, 'edit'])->name('reginformacions.edit');
 Route::match(['PUT', 'PATCH'], '/reginformacions/{reginformacions}', [ReginformacionController::class, 'update'])->name('reginformacions.update');
 
+Route::post('/guardar-mensaje', 'mensajeController@guardarMensaje')->name('guardarMensaje');
+
 });
 
 
