@@ -17,8 +17,11 @@ return new class extends Migration
             $table->string(nombre_usuario);
             $table->string(mensaje);
             $table->timestamps();
+
+        $table->foreign('mensajes')->references('id')->on('profesionales');
         });
     }
+
 
     /**
      * Reverse the migrations.
